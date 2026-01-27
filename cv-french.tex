@@ -1,0 +1,201 @@
+\documentclass{article}
+
+\usepackage{titling}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tabularx}
+%% \usepackage{cellspace}
+\usepackage{booktabs}
+
+% En tete de ton CV, le poste que tu recherches
+\title{Ingénieur Cloud et DevOps}
+% Ton nom et ton prenom + ton age (optionel)
+\author{Issam SISBANE, 24 ans}
+\date{}
+
+\geometry{
+    top=1.7cm,
+    bottom=1.7cm,
+    left=2cm,
+    right=2cm
+}
+\pagestyle{empty} % Retire la pagination
+\setlist[itemize]{itemsep=0pt} % Espace entre les items dans une liste
+\setlength{\droptitle}{-5em} % Ajuster la valeur pour augmenter / diminuer le spacing dans le document
+
+\begin{document}
+\maketitle
+\thispagestyle{empty} % Retirer le numéro de la premiere page
+\vspace{-4em}
+
+% Dans cette section, numéro de telephone, email, liens vers linkedin et github et ma ville de recherche
+\begin{center}
++33 7 60 62 82 99 | \href{mailto:issam.sisbane@gmail.com}{\underline{issam.sisbane@gmail.com}}
+
+\href{https://linkedin.com/in/issamsisbane}{\underline{linkedin.com/in/issamsisbane}} | \href{https://github.com/issamsisbane}{\underline{github.com/issamsisbane}} | \href{https://issamsisbane.github.io/portfolio/fr/}{\underline{portfolio}}
+\end{center}
+\begin{center}
+\textbf{Sophia Antipolis, PACA, France}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Phrase d'intro qui donne mon expertise
+\begin{center}
+Ingénieur avec plus d'1 an d'experience et 3 ans d'alternance, j’aide les équipes à livrer plus rapidement, plus sûrement et plus efficacement en tirant parti de Kubernetes et du DevSecOps pour automatiser les déploiements, optimiser les ressources et garantir une scalabilité et une disponibilité continues.
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tables des compétences
+\section*{Compétences Techniques}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+  \textbf{Cloud \& Infrastructure} & Azure, Outscale, Terraform, Ansible \\
+  \addlinespace[2pt]
+  \textbf{Conteneurs \& Orchestration} & Kubernetes, OpenShift, Helm, Kustomize, ArgoCD, CloudNativePG \\
+  \addlinespace[2pt]
+  \textbf{CI/CD \& DevOps} & GitLab, Sonatype Nexus \\
+  \addlinespace[2pt]
+  \textbf{Sécurité \& Conformité} & HashiCorp Vault, Politiques Kyverno, Trivy, Nexus IQ \\
+  \addlinespace[2pt]
+  \textbf{Monitoring \& Observabilité} & Prometheus, Grafana, Loki \\
+  \addlinespace[2pt]
+  \textbf{Bases de données} & PostgreSQL, CosmosDB, MySQL \\
+  \addlinespace[2pt]
+  \textbf{Programmation \& Scripting} & Python, Bash \\
+  \addlinespace[2pt]
+  \textbf{Gestion de projet} & Agile, Culture DevOps, Formation \& mentorat \\
+  \addlinespace[2pt]
+  \textbf{Communication} & Français (natif), Anglais (C1) \\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{4ex}
+\hrulefill
+\section*{Expériences Professionnelles}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% EXPERIENCE 1
+%%
+\paragraph{Ingénieur Cloud et DevOps}\hspace*{\fill}Octobre 2024 - Présent
+
+\noindent
+Atos | Pôle Cloud | Sophia Antipolis, France
+
+\noindent
+\textbf{\underline{Clients}}: Ministère de la Justice - Gendarmerie Nationale - ONIAM
+
+\raggedright  
+\begin{itemize}
+    \item{Accompagné la migration Openshift \textbf{3→4} pour \textbf{70+} applications avec refonte complète CI/CD (Jenkins → GitLab CI/CD). Migration \textbf{Kustomize vers Helm Charts} standardisés intégrant PostgreSQL (CloudNativePG), HashiCorp Vault, sauvegardes S3 et HPA. Implémentation de \textbf{conteneurs rootless} et policies \textbf{Kyverno}.\\ \underline{Impact} : \textbf{0\%} downtime, \textbf{-70\%} temps de déploiement, \textbf{-20\%} surface d'attaque, formation \textbf{50+} développeurs.}
+    \item{Déployé et administré une \textbf{plateforme DevOps self-service multi-clusters} (GitLab CI/CD, ArgoCD, Nexus, Vault, OpenShift 4) sur \textbf{6} environnements. Création de \textbf{composants CI/CD} réutilisables (build, test, scan sécurité, SBOM) et \textbf{automatisation} Ansible du provisioning.\\ \underline{Impact} : adoption par \textbf{30+ équipes}, \textbf{-85\%} temps d'onboarding, déploiement \textbf{3 semaines→2 jours}.}
+    \item{Automatisé l'\textbf{infrastructure Cloud} via Terraform/Ansible sur \textbf{Outscale} avec stratégie \textbf{FinOps}, monitoring Prometheus/Grafana, alerting et SSO.\\ \underline{Impact} : \textbf{-90\%} temps provisioning (3 jours→30min), \textbf{-20\%} coûts cloud, \textbf{-40\% MTTR}.}
+\end{itemize}
+%% 
+%% STOP EXPERIENCE 1
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% EXPERIENCE 2
+%%
+\paragraph{Ingénieur Cloud (Alternance)}\hspace*{\fill}Septembre 2021 - Septembre 2024
+
+\noindent
+Thuasne | Lyon, France
+
+\raggedright  
+\begin{itemize}
+    \item{Dirigé la migration et l'amélioration d'une \textbf{plateforme cloud-native Kubernetes} sur \textbf{Azure} pour l'ingestion et la gestion de données médicales IoT conformes \textbf{FHIR}, \textbf{RGPD/HDS}. \\ \underline{Impact} : plateforme pilote gérant \textbf{8 000+} dispositifs IoT avec \textbf{95\%} de disponibilité.}
+    \item{Implémenté une solution cloud automatisée de digitalisation utilisant \textbf{Azure Cognitive Services (OCR)} pour traiter des formulaires manuscrits de mesures orthopédiques.\\ \underline{Impact} : \textbf{250+} formulaires traités quotidiennement avec \textbf{94\%} de précision, \textbf{-80\%} temps de saisie manuelle, \textbf{-85\%} erreurs de transcription, bénéficiant à \textbf{15 000+ patients/an}.}
+    \item{Conçu un système de réconciliation de données multi-sources en temps réel vers \textbf{CosmosDB} pour créer la première API unifiée des articles du groupe avec \textbf{Azure Durable Functions} et \textbf{Azure Data Factory}.\\ \underline{Impact} : catalogue unifié de \textbf{65 000+} références produits avec latence inférieure à \textbf{20 min}, \textbf{-70\%} incohérences de données.}
+\end{itemize}
+%% 
+%% STOP EXPERIENCE 2
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% EXPERIENCE 3
+%%
+\paragraph{Développeur Python (Stage)}\hspace*{\fill}Avril 2021 - Juillet 2021
+
+\noindent
+Ciril Group | Villeurbanne, France
+
+\raggedright  
+\begin{itemize}
+    \item{Developpé une solution d'automatisation \textbf{Python/Scrapy} pour collecter, nettoyer et normaliser à grande échelle les adresses de \textbf{25+ enseignes} à l'échelle nationale.\\ \underline{Impact} : collecte de \textbf{30 000+} adresses avec \textbf{95\%} de précision en quelques jours vs. plusieurs mois en traitement manuel}
+\end{itemize}
+%% 
+%% STOP EXPERIENCE 3
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2ex}
+\hrulefill
+\section*{Formation}
+\paragraph{Diplome d'Ingénieur en Informatique}\hspace*{\fill}Septembre 2021 - Septembre 2024
+
+Polytech Lyon | Villeurbanne, France
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{DUT Informatique}\hspace*{\fill}Septembre 2019 - Septembre 2021
+
+IUT Lyon 1 | Villeurbanne, France
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2ex}
+\hrulefill
+\section*{Projects}
+
+\paragraph{Portfolio / Blog} \hspace*{\fill}Depuis Février 2024
+
+Lien: \href{https://issamsisbane.github.io/portfolio/fr/}{\underline{portfolio}}
+
+\vspace{\baselineskip}
+
+Site portfolio et blog personnel développé avec Astro et déployé sur GitHub Pages. Design moderne présentant mes projets, compétences et expériences détaillées. Connecté à mes notes Markdown via CI/CD pour des mises à jour automatiques. Inclut une section blog où je partage mes apprentissages et des articles sur le cloud, DevOps et développement logiciel.
+
+
+
+\paragraph{Homelab} \hspace*{\fill}Depuis Décembre 2024
+
+Lien: \href{https://issamsisbane.github.io/portfolio/fr/blog/homelab---1---setup/}{\underline{homelab}}
+
+\vspace{\baselineskip}
+
+Homelab auto-hébergé sur Kubernetes pour exécuter divers services pour mon usage personnel. Conçu pour l'apprentissage et l'expérimentation de technologies incluant l'orchestration de conteneurs, la gestion réseau et l'automatisation système. Toujours en chantier avec des ajouts, refactor et améliorations régulières.
+
+\vspace{\baselineskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2ex}
+\hrulefill
+
+\section*{Certifications}
+\begin{itemize}
+  \item Certified Kubernetes Administrator \textbf{(CKA)} – The Linux Foundation, 2025
+  \item Microsoft Certified: Azure Developer \textbf{(AZ-204)} – Microsoft, 2024
+  \item Microsoft Certified: Azure Fundamentals \textbf{(AZ-900)} – Microsoft, 2024
+  \item \textbf{TOEIC} – ETS, 2023
+\end{itemize}
+\end{document}
